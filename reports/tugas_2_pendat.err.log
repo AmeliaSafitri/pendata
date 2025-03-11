@@ -29,7 +29,7 @@ print(df_sorted.to_string(index=False))
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mKeyError[0m                                  Traceback (most recent call last)
-[0;32m/tmp/ipykernel_11995/3867776731.py[0m in [0;36m?[0;34m()[0m
+[0;32m/tmp/ipykernel_15819/3867776731.py[0m in [0;36m?[0;34m()[0m
 [1;32m      1[0m [0;31m# Urutkan data berdasarkan jarak dari terkecil ke terbesar[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 2[0;31m [0mdf_sorted[0m [0;34m=[0m [0mdf_merged[0m[0;34m.[0m[0msort_values[0m[0;34m([0m[0mby[0m[0;34m=[0m[0;34m"knn_distance"[0m[0;34m,[0m [0mascending[0m[0;34m=[0m[0;32mTrue[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      3[0m [0;34m[0m[0m
