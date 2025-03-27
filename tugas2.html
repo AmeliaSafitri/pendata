@@ -388,7 +388,14 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memuat-dataset-iris-mengonversinya-menjadi-dataframe-pandas-dan-menampilkan-bentuk-serta-isinya">Memuat dataset Iris, mengonversinya menjadi DataFrame pandas, dan menampilkan bentuk serta isinya.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memisahkan-outlier-dari-data">Memisahkan outlier dari data</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-akurasi-data">Menghitung akurasi data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">Visualisasi Data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">Visualisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-3-class-classification-1">Perbedaan 3-Class classification 1</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-3-class-classification-2">Perbedaan 3-Class classification 2</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-3-class-classification-pada-code-1-dan-code-2">Perbedaan 3-Class classification pada code 1 dan code 2</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot-dengan-warna-berdasarkan-1">Scatter plot dengan warna berdasarkan  1</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-scatter-plot-dengan-warna-berdasarkan-class-1-dan-2">Perbedaan Scatter Plot dengan Warna Berdasarkan Class 1 dan 2</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -803,6 +810,7 @@ KNN mengukur jarak antara titik data dan tetangga terdekatnya. Titik data yang j
 <img alt="_images/0260e19fabc2668c50f7f1763a8afca5b8c97d67fb2ded91331c596582ba6935.png" src="_images/0260e19fabc2668c50f7f1763a8afca5b8c97d67fb2ded91331c596582ba6935.png" />
 </div>
 </div>
+<p>warna merah artinya outlier, sedangkan warna artinya tanpa outlier</p>
 </section>
 <section id="total-outlier">
 <h4>Total outlier<a class="headerlink" href="#total-outlier" title="Link to this heading">#</a></h4>
@@ -1052,6 +1060,7 @@ KNN mengukur jarak antara titik data dan tetangga terdekatnya. Titik data yang j
 </div>
 </div>
 </div>
+<p>Hasil cetak berupa tabel dengan kolom dan data numerik yang mewakili panjang dan lebar dari kelopak dan mahkota bunga.</p>
 </section>
 <section id="memuat-dataset-iris-mengonversinya-menjadi-dataframe-pandas-dan-menampilkan-bentuk-serta-isinya">
 <h4>Memuat dataset Iris, mengonversinya menjadi DataFrame pandas, dan menampilkan bentuk serta isinya.<a class="headerlink" href="#memuat-dataset-iris-mengonversinya-menjadi-dataframe-pandas-dan-menampilkan-bentuk-serta-isinya" title="Link to this heading">#</a></h4>
@@ -1098,6 +1107,7 @@ KNN mengukur jarak antara titik data dan tetangga terdekatnya. Titik data yang j
 </div>
 </div>
 </div>
+<p>kode tersebut berhasil memuat dataset Iris, mengubahnya menjadi DataFrame dengan pustaka pandas, mengganti nama kolom untuk memperjelas data, memilih kolom tertentu yang relevan, serta mencetak dimensi (shape) dan isi dari DataFrame.</p>
 </section>
 <section id="memisahkan-outlier-dari-data">
 <h4>Memisahkan outlier dari data<a class="headerlink" href="#memisahkan-outlier-dari-data" title="Link to this heading">#</a></h4>
@@ -1592,6 +1602,8 @@ Iris-versicolor       1.00      1.00      1.00         7
 </section>
 <section id="visualisasi-data">
 <h4>Visualisasi Data<a class="headerlink" href="#visualisasi-data" title="Link to this heading">#</a></h4>
+<section id="perbedaan-3-class-classification-1">
+<h5>Perbedaan 3-Class classification 1<a class="headerlink" href="#perbedaan-3-class-classification-1" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1683,6 +1695,57 @@ Iris-versicolor       1.00      0.86      0.92         7
 <img alt="_images/38f78370a1f1b2fb3711e74767405b5e4fd7b3a59739ec93f8059c132a1ab6dd.png" src="_images/38f78370a1f1b2fb3711e74767405b5e4fd7b3a59739ec93f8059c132a1ab6dd.png" />
 </div>
 </div>
+<p>Penjelasan Hasil Angka
+Akurasi: Kode menghasilkan akurasi 96%, yang berarti 96% dari data uji berhasil diklasifikasikan dengan benar oleh model KNN. Ini menunjukkan performa yang sangat baik.</p>
+<ol class="arabic simple">
+<li><p>Iris-setosa:
+a. Precision: 1.00 (semua prediksi kelas ini benar)</p></li>
+</ol>
+<p>b. Recall: 1.00 (semua data kelas ini teridentifikasi)</p>
+<p>c. F1-score: 1.00 (kombinasi presisi dan recall)</p>
+<ol class="arabic simple" start="2">
+<li><p>Iris-versicolor:</p></li>
+</ol>
+<p>a. Precision: 1.00 (prediksi sangat akurat)</p>
+<p>b. Recall: 0.86 (beberapa data kelas ini mungkin salah diklasifikasikan)</p>
+<p>c. F1-score: 0.92</p>
+<ol class="arabic simple" start="3">
+<li><p>Iris-virginica:</p></li>
+</ol>
+<p>a. Precision: 0.89 (cukup akurat untuk kelas ini)</p>
+<p>b. Recall: 1.00 (semua data kelas ini teridentifikasi dengan benar)</p>
+<p>c. F1-score: 0.94</p>
+<ol class="arabic simple" start="4">
+<li><p>Overall Metrics:</p></li>
+</ol>
+<p>a. Macro average dan Weighted average F1-score masing-masing adalah 0.95 dan 0.96, menegaskan kinerja keseluruhan model sangat baik.</p>
+<p>Pentingnya Metode Evaluasi: Metode ini memastikan bahwa model tidak hanya berfokus pada kelas mayoritas, tetapi juga mempertimbangkan keseimbangan antar kelas.</p>
+<p>Penjelasan Gambar</p>
+<ol class="arabic simple">
+<li><p>Plot Kiri (k=11, weights=’uniform’):</p></li>
+</ol>
+<p>Warna Latar:</p>
+<p>a. Ungu: Area untuk kelas Iris-setosa.</p>
+<p>b. Teal (biru kehijauan): Area untuk kelas Iris-versicolor.</p>
+<p>c. Kuning: Area untuk kelas Iris-virginica.</p>
+<p>Titik Data:</p>
+<p>a. Lingkaran ungu: Data asli dari kelas Iris-setosa.</p>
+<p>b. Lingkaran teal (biru kehijauan): Data asli dari kelas Iris-versicolor.</p>
+<p>c. Lingkaran kuning: Data asli dari kelas Iris-virginica.</p>
+<p>Decision boundary dihasilkan berdasarkan aturan KNN dengan bobot semua tetangga sama (uniform).</p>
+<ol class="arabic simple" start="2">
+<li><p>Plot Kanan (k=11, weights=’distance’):</p></li>
+</ol>
+<p>Warna Latar:</p>
+<p>a. Warna tetap sama: Ungu untuk Iris-setosa, teal untuk Iris-versicolor, dan kuning untuk Iris-virginica.</p>
+<p>Titik Data:</p>
+<p>a. Tetap menggunakan lingkaran ungu, teal, dan kuning sesuai kelas aslinya.</p>
+<p>Perbedaannya: Decision boundary lebih fleksibel karena KNN menggunakan bobot berdasarkan jarak. Tetangga yang lebih dekat mendapat pengaruh lebih besar.</p>
+<p>Kesimpulannya : Menggunakan weights=’uniform’, semua tetangga memberikan kontribusi yang sama. Hasilnya, decision boundary terlihat lebih kaku dan seragam.</p>
+<p>Menggunakan weights=’distance’, tetangga yang lebih dekat memberikan pengaruh lebih besar. Hasilnya, decision boundary lebih fleksibel dan menyesuaikan dengan pola lokal data.</p>
+</section>
+<section id="perbedaan-3-class-classification-2">
+<h5>Perbedaan 3-Class classification 2<a class="headerlink" href="#perbedaan-3-class-classification-2" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -1788,6 +1851,94 @@ Iris-versicolor       0.75      0.43      0.55         7
 <img alt="_images/97ecfeb6f1dc25d4d2ce7c72372ccf73bde85a9045bec23297d67510657b390e.png" src="_images/97ecfeb6f1dc25d4d2ce7c72372ccf73bde85a9045bec23297d67510657b390e.png" />
 </div>
 </div>
+<p>Penjelasan Hasil Angka</p>
+<p>Akurasi: Kode menghasilkan akurasi 81%, yang berarti 81% dari data uji berhasil diklasifikasikan dengan benar oleh model KNN. Ini menunjukkan performa yang cukup baik, meskipun terdapat ruang untuk peningkatan terutama pada salah satu kelas.</p>
+<ol class="arabic simple">
+<li><p>Iris-setosa:</p></li>
+</ol>
+<p>a. Precision: 1.00 (semua prediksi untuk kelas ini benar).</p>
+<p>b. Recall: 1.00 (semua data kelas ini teridentifikasi dengan benar).</p>
+<p>c. F1-score: 1.00 (kombinasi sempurna dari precision dan recall).</p>
+<p>d. Support: 12 (jumlah data uji untuk kelas ini).</p>
+<ol class="arabic simple" start="2">
+<li><p>Iris-versicolor:</p></li>
+</ol>
+<p>a. Precision: 0.75 (beberapa prediksi untuk kelas ini salah).</p>
+<p>b. Recall: 0.43 (hanya 43% data kelas ini berhasil diklasifikasikan dengan benar).</p>
+<p>c. F1-score: 0.55 (mengindikasikan kinerja kurang memuaskan untuk kelas ini).</p>
+<p>d. Support: 7.</p>
+<ol class="arabic simple" start="3">
+<li><p>Iris-virginica:</p></li>
+</ol>
+<p>a. Precision: 0.64 (cukup moderat dalam memprediksi kelas ini).</p>
+<p>b. Recall: 0.88 (mayoritas data kelas ini berhasil diidentifikasi dengan benar).</p>
+<p>c. F1-score: 0.74 (kombinasi yang cukup baik antara precision dan recall).</p>
+<p>d. Support: 8.</p>
+<ol class="arabic simple" start="4">
+<li><p>Overall Metrics:</p></li>
+</ol>
+<p>a. Macro Average:</p>
+<ol class="arabic simple">
+<li><p>Precision: 0.80, Recall: 0.77, F1-score: 0.76.</p></li>
+<li><p>Menunjukkan rata-rata performa antar kelas, tanpa memperhatikan ukuran kelas.</p></li>
+</ol>
+<p>b. Weighted Average:</p>
+<ol class="arabic simple">
+<li><p>Precision: 0.83, Recall: 0.81, F1-score: 0.80.</p></li>
+<li><p>Memperhitungkan jumlah data di setiap kelas untuk menghitung rata-rata.</p></li>
+</ol>
+<p>Kesimpulan Hasil Angka: Performanya cukup baik secara keseluruhan, terutama untuk kelas Iris-setosa, tetapi kinerja untuk Iris-versicolor masih perlu ditingkatkan.</p>
+<p>Penjelasan Gambar</p>
+<ol class="arabic simple">
+<li><p>Plot Kiri (weights=’uniform’):</p></li>
+</ol>
+<p>Warna Latar:</p>
+<p>a. Ungu: Area untuk kelas Iris-setosa.</p>
+<p>b. Teal (biru kehijauan): Area untuk kelas Iris-versicolor.</p>
+<p>c. Kuning: Area untuk kelas Iris-virginica.</p>
+<p>Titik Data:</p>
+<p>a. Lingkaran ungu: Data asli dari kelas Iris-setosa.</p>
+<p>b. Lingkaran teal: Data asli dari kelas Iris-versicolor.</p>
+<p>c. Lingkaran kuning: Data asli dari kelas Iris-virginica.</p>
+<p>Decision Boundary: Garis pembatas antar kelas lebih kaku karena semua tetangga memiliki bobot yang sama. Area klasifikasi lebih sederhana dan seragam.</p>
+<ol class="arabic simple" start="2">
+<li><p>Plot Kanan (weights=’distance’):</p></li>
+</ol>
+<p>Warna Latar: Tetap sama seperti plot kiri.</p>
+<p>Titik Data:</p>
+<p>a. Tetap sama dengan warna sesuai kelasnya.</p>
+<p>Decision Boundary:</p>
+<p>a. Garis pembatas lebih fleksibel karena KNN menggunakan bobot berdasarkan jarak. Tetangga yang lebih dekat memiliki pengaruh lebih besar.</p>
+<p>Pembagian kelas lebih responsif terhadap distribusi lokal data, menghasilkan area yang lebih adaptif.</p>
+<p>Perbedaan:</p>
+<p>Uniform: Memberikan pembagian area klasifikasi yang lebih kaku.</p>
+<p>Distance: Memberikan pembagian area klasifikasi yang lebih fleksibel, sesuai distribusi data</p>
+</section>
+<section id="perbedaan-3-class-classification-pada-code-1-dan-code-2">
+<h5>Perbedaan 3-Class classification pada code 1 dan code 2<a class="headerlink" href="#perbedaan-3-class-classification-pada-code-1-dan-code-2" title="Link to this heading">#</a></h5>
+<ol class="arabic simple">
+<li><p>Data yang Digunakan
+Kode 1: Data telah melalui proses pembersihan (cleaning) menggunakan metode Local Outlier Factor (LOF) untuk menghapus outlier. Hasilnya adalah data bersih yang lebih akurat untuk analisis.</p></li>
+</ol>
+<p>Kode 2: Tidak disebutkan adanya proses pembersihan data. Kemungkinan masih mengandung outlier, sehingga kualitas data lebih rendah dan memengaruhi performa model.</p>
+<ol class="arabic simple" start="2">
+<li><p>Pemilihan Fitur
+Kode 1: Fitur yang digunakan adalah petal_length dan petal_width. Fitur ini memiliki daya pisah (separability) yang lebih baik untuk klasifikasi dan memberikan hasil yang lebih akurat.</p></li>
+</ol>
+<p>Kode 2: Fitur yang digunakan adalah sepal_length dan sepal_width. Fitur ini cenderung memiliki daya pisah yang lebih rendah, sehingga performa model dan visualisasi decision boundary kurang optimal.</p>
+<ol class="arabic simple" start="3">
+<li><p>Performa Model
+Kode 1: Akurasi model sangat tinggi (96%), menunjukkan klasifikasi yang hampir sempurna.</p></li>
+</ol>
+<p>Kode 2: Akurasi lebih rendah (81.48%), menunjukkan bahwa model kurang efektif karena data atau fitur yang kurang optimal.</p>
+<ol class="arabic simple" start="4">
+<li><p>Visualisasi Decision Boundary
+Kode 1: Decision boundary terlihat jelas dengan pembagian yang tajam antara kelas, karena menggunakan fitur yang lebih informatif.</p></li>
+</ol>
+<p>Kode 2: Decision boundary kurang presisi, menunjukkan adanya pengaruh dari fitur yang kurang kuat atau data yang tidak sepenuhnya bersih.</p>
+</section>
+<section id="scatter-plot-dengan-warna-berdasarkan-1">
+<h5>Scatter plot dengan warna berdasarkan  1<a class="headerlink" href="#scatter-plot-dengan-warna-berdasarkan-1" title="Link to this heading">#</a></h5>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1814,6 +1965,16 @@ Iris-versicolor       0.75      0.43      0.55         7
 <img alt="_images/74ced3a8635397d7ef33465e728cc2f0823c59718ed30b5043d6d9e6db4f9c32.png" src="_images/74ced3a8635397d7ef33465e728cc2f0823c59718ed30b5043d6d9e6db4f9c32.png" />
 </div>
 </div>
+<p>Kode menggunakan pustaka Python matplotlib.pyplot untuk membuat scatter plot berdasarkan dua fitur: petal_length (panjang kelopak) dan petal_width (lebar kelopak). Warna pada grafik sesuai dengan kelas dataset Iris:</p>
+<p>Biru: “Iris-setosa”</p>
+<p>Hijau: “Iris-versicolor”</p>
+<p>Merah: “Iris-virginica”</p>
+<p>Kode juga memastikan setiap titik memiliki ukuran, warna, dan garis tepi yang sesuai, serta memberikan label pada sumbu x, sumbu y, dan judul grafik.</p>
+<p>Grafik Scatter Plot: Grafik ini menggambarkan hubungan antara panjang kelopak (petal_length) dan lebar kelopak (petal_width) untuk setiap kelas:</p>
+<p>Titik biru mewakili kelas “Iris-setosa.”</p>
+<p>Titik hijau mewakili kelas “Iris-versicolor.”</p>
+<p>Titik merah mewakili kelas “Iris-virginica.”</p>
+<p>Visualisasi ini berguna untuk melihat bagaimana dua fitur ini membedakan kelas dalam dataset Iris.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -1840,6 +2001,36 @@ Iris-versicolor       0.75      0.43      0.55         7
 <img alt="_images/b8a2ef5d96fe4421522cc53ea80cdcb23650e9800df3a26e58599e4f3e77df53.png" src="_images/b8a2ef5d96fe4421522cc53ea80cdcb23650e9800df3a26e58599e4f3e77df53.png" />
 </div>
 </div>
+<p>Kode menggunakan pustaka Python matplotlib.pyplot untuk membuat scatter plot berdasarkan dua fitur: sepal_length (panjang sepal) dan sepal_width (lebar sepal). Warna pada grafik menunjukkan kelas dataset Iris:</p>
+<p>Biru: “Iris-setosa.”</p>
+<p>Hijau: “Iris-versicolor.”</p>
+<p>Merah: “Iris-virginica.”</p>
+<p>Kode ini juga memastikan setiap titik memiliki ukuran, warna, dan garis tepi yang sesuai. Selain itu, kode memberikan label pada sumbu x dan sumbu y, serta memberikan judul grafik untuk memperjelas isi visualisasi.</p>
+<p>Grafik Scatter Plot: Grafik ini menggambarkan hubungan antara panjang sepal (sepal_length) dan lebar sepal (sepal_width) untuk setiap kelas pada dataset:</p>
+<p>Titik biru mewakili kelas “Iris-setosa.”</p>
+<p>Titik hijau mewakili kelas “Iris-versicolor.”</p>
+<p>Titik merah mewakili kelas “Iris-virginica.”</p>
+<p>Visualisasi ini berguna untuk memahami bagaimana fitur panjang sepal dan lebar sepal dapat digunakan untuk membedakan tiga kelas dalam dataset Iris</p>
+</section>
+<section id="perbedaan-scatter-plot-dengan-warna-berdasarkan-class-1-dan-2">
+<h5>Perbedaan Scatter Plot dengan Warna Berdasarkan Class 1 dan 2<a class="headerlink" href="#perbedaan-scatter-plot-dengan-warna-berdasarkan-class-1-dan-2" title="Link to this heading">#</a></h5>
+<p>Perbedaan antara kedua grafik scatter plot adalah :</p>
+<ol class="arabic simple">
+<li><p>Fitur yang Dipilih untuk Visualisasi</p></li>
+</ol>
+<p>a. Grafik pertama menggunakan panjang kelopak (petal_length) dan lebar kelopak (petal_width) sebagai sumbu x dan y.</p>
+<p>b. Grafik kedua menggunakan panjang sepal (sepal_length) dan lebar sepal (sepal_width) sebagai sumbu x dan y.</p>
+<ol class="arabic simple" start="2">
+<li><p>Variabilitas Fitur:</p></li>
+</ol>
+<p>a. Pada gambar pertama (menggunakan petal_length dan petal_width), data untuk panjang kelopak dan lebar kelopak memiliki kisaran yang lebih kecil dibandingkan dengan panjang dan lebar sepal. Hal ini menghasilkan sebaran titik yang tampak lebih “rapat.”</p>
+<p>b. Pada gambar kedua (menggunakan sepal_length dan sepal_width), panjang dan lebar sepal memiliki kisaran yang lebih besar, sehingga sebaran titik terlihat lebih “renggang.”</p>
+<ol class="arabic simple" start="3">
+<li><p>Hubungan antara Fitur:</p></li>
+</ol>
+<p>a. Petal_length dan petal_width sering kali memiliki korelasi yang lebih erat. Ini membuat data terlihat lebih terfokus di area tertentu.</p>
+<p>b. sepal_length dan sepal_width cenderung memiliki hubungan yang lebih longgar, sehingga titik-titik tersebar lebih luas.</p>
+</section>
 </section>
 </section>
 </section>
@@ -1967,6 +2158,67 @@ Index: 26, True Label: Iris-versicolor, Predicted: Iris-virginica
 <img alt="_images/6440293535c35e1551ed146c95aeb9778d51425d81f0322168086d3bd4d53d66.png" src="_images/6440293535c35e1551ed146c95aeb9778d51425d81f0322168086d3bd4d53d66.png" />
 </div>
 </div>
+<ol class="arabic simple">
+<li><p>Penjelasan Berdasarkan Gambar</p></li>
+</ol>
+<p>Gambar tersebut menunjukkan dua confusion matrix dari hasil klasifikasi menggunakan model Naive Bayes pada dataset Iris. Setiap matrix mewakili kondisi data:</p>
+<p>a. Confusion Matrix dengan Outlier (kiri):</p>
+<p>Menampilkan performa model ketika dataset masih mengandung outlier.</p>
+<p>Angka-angka menunjukkan prediksi yang salah lebih banyak, dengan akurasi rendah.</p>
+<p>b. Confusion Matrix tanpa Outlier (kanan):</p>
+<p>Menampilkan performa model setelah data dibersihkan dari outlier.</p>
+<p>Prediksi yang benar meningkat, dan akurasi model lebih baik.</p>
+<ol class="arabic simple" start="2">
+<li><p>Detail Pengaruh Angka pada Confusion Matrix</p></li>
+</ol>
+<p>a.  Confusion Matrix dengan Outlier:</p>
+<p>Iris-setosa:</p>
+<p>0 diklasifikasikan benar sebagai Iris-setosa.</p>
+<p>10 salah diklasifikasikan sebagai Iris-versicolor.</p>
+<p>0 salah diklasifikasikan sebagai Iris-virginica.</p>
+<p>Pengaruh: Seluruh data Iris-setosa salah prediksi, menunjukkan dampak besar outlier pada kelas ini.</p>
+<p>Iris-versicolor:</p>
+<p>0 salah diklasifikasikan sebagai Iris-setosa.</p>
+<p>9 diklasifikasikan benar sebagai Iris-versicolor.</p>
+<p>0 salah diklasifikasikan sebagai Iris-virginica.</p>
+<p>Pengaruh: Cukup stabil, tetapi ada beberapa kasus sulit.</p>
+<p>Iris-virginica:</p>
+<p>0 salah diklasifikasikan sebagai Iris-setosa.</p>
+<p>10 salah diklasifikasikan sebagai Iris-versicolor.</p>
+<p>1 diklasifikasikan benar sebagai Iris-virginica.</p>
+<p>Pengaruh: Banyak kesalahan terjadi di kelas ini, karena outlier menyebabkan model sering salah prediksi.</p>
+<p>b. Confusion Matrix tanpa Outlier:</p>
+<p>Iris-setosa:</p>
+<p>12 diklasifikasikan benar sebagai Iris-setosa.</p>
+<p>0 salah diklasifikasikan sebagai Iris-versicolor atau Iris-virginica.</p>
+<p>Pengaruh: Semua data Iris-setosa diklasifikasikan dengan benar, menunjukkan penghapusan outlier memberikan hasil signifikan.</p>
+<p>Iris-versicolor:</p>
+<p>0 salah diklasifikasikan sebagai Iris-setosa.</p>
+<p>3 diklasifikasikan benar sebagai Iris-versicolor.</p>
+<p>4 salah diklasifikasikan sebagai Iris-virginica.</p>
+<p>Pengaruh: Beberapa kesalahan terjadi antara Iris-versicolor dan Iris-virginica karena batas fitur mereka mungkin serupa.</p>
+<p>Iris-virginica:</p>
+<p>0 salah diklasifikasikan sebagai Iris-setosa.</p>
+<p>2 salah diklasifikasikan sebagai Iris-versicolor.</p>
+<p>6 diklasifikasikan benar sebagai Iris-virginica.</p>
+<p>Pengaruh: Model lebih baik dalam mengenali kelas ini setelah outlier dihapus.</p>
+<ol class="arabic simple" start="3">
+<li><p>Implementasi Naive Bayes</p></li>
+</ol>
+<p>a. Implementasi Naive Bayes dengan Data Outlier</p>
+<p>Jumlah Kesalahan Klasifikasi:</p>
+<p>Dari total 30 data uji, 20 data diklasifikasikan salah. Kesalahan ini disebabkan oleh keberadaan outlier yang mengganggu distribusi data.</p>
+<p>Akurasi:</p>
+<p>Akurasi model rendah, yaitu 33.33%.</p>
+<p>Kesalahan Klasifikasi:</p>
+<p>Banyak kesalahan terjadi pada data kelas Iris-virginica yang sering diklasifikasikan sebagai Iris-versicolor.</p>
+<p>b. Implementasi Naive Bayes tanpa Outlier</p>
+<p>Jumlah Kesalahan Klasifikasi:</p>
+<p>Dari total 27 data uji, hanya 6 data diklasifikasikan salah. Dengan penghapusan outlier, distribusi data menjadi lebih bersih, sehingga model dapat membuat prediksi yang lebih akurat.</p>
+<p>Akurasi:</p>
+<p>Akurasi meningkat signifikan menjadi 77.78%.</p>
+<p>Kesalahan Klasifikasi:</p>
+<p>Kebanyakan kesalahan terjadi antara kelas Iris-versicolor dan Iris-virginica yang memiliki batasan fitur yang lebih mirip.</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -2057,7 +2309,14 @@ Index: 26, True Label: Iris-versicolor, Predicted: Iris-virginica
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memuat-dataset-iris-mengonversinya-menjadi-dataframe-pandas-dan-menampilkan-bentuk-serta-isinya">Memuat dataset Iris, mengonversinya menjadi DataFrame pandas, dan menampilkan bentuk serta isinya.</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#memisahkan-outlier-dari-data">Memisahkan outlier dari data</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-akurasi-data">Menghitung akurasi data</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">Visualisasi Data</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-data">Visualisasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-3-class-classification-1">Perbedaan 3-Class classification 1</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-3-class-classification-2">Perbedaan 3-Class classification 2</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-3-class-classification-pada-code-1-dan-code-2">Perbedaan 3-Class classification pada code 1 dan code 2</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#scatter-plot-dengan-warna-berdasarkan-1">Scatter plot dengan warna berdasarkan  1</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#perbedaan-scatter-plot-dengan-warna-berdasarkan-class-1-dan-2">Perbedaan Scatter Plot dengan Warna Berdasarkan Class 1 dan 2</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
