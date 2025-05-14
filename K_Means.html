@@ -688,6 +688,23 @@
 <img alt="_images/6b4c67dfb980e194fdba82d9cc2868af1f96b8bc756ba777b5f727a7e5f1bb06.png" src="_images/6b4c67dfb980e194fdba82d9cc2868af1f96b8bc756ba777b5f727a7e5f1bb06.png" />
 </div>
 </div>
+<ol class="arabic simple">
+<li><p>Evaluasi Clustering</p></li>
+</ol>
+<ul class="simple">
+<li><p>Inertia: Nilai 92.38 menunjukkan seberapa erat titik-titik data dalam cluster mereka. Semakin rendah inertia, semakin baik kualitas pengelompokan.</p></li>
+<li><p>Silhouette Score: Nilai 0.9092 menunjukkan bahwa cluster yang terbentuk cukup baik—mendekati 1 berarti objek lebih jelas berada dalam kelompok yang benar.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Visualisasi Pengelompokan</p></li>
+</ol>
+<ul class="simple">
+<li><p>Plot menampilkan titik-titik data setelah reduksi dimensi menggunakan PCA (Principal Component Analysis).</p></li>
+<li><p>Setiap titik dalam scatter plot mewakili sampel data yang telah dikelompokkan ke dua cluster oleh K-Means.</p></li>
+<li><p>Warna berbeda menunjukkan cluster yang terbentuk: misalnya kuning dan ungu untuk masing-masing grup.</p></li>
+<li><p>Sumbu X dan Y mewakili dua komponen utama dari PCA (PCA 1 dan PCA 2).</p></li>
+</ul>
+<p>Secara keseluruhan, hasil clustering ini menunjukkan bahwa data terbagi cukup baik dalam dua kelompok, seperti yang ditunjukkan oleh silhouette score yang tinggi.</p>
 </section>
 <section id="clustering-visualisasi-3-cluster">
 <h2>Clustering + Visualisasi (3 Cluster)<a class="headerlink" href="#clustering-visualisasi-3-cluster" title="Link to this heading">#</a></h2>
@@ -720,6 +737,23 @@
 <img alt="_images/fb038bf6a3cc034476a52cae2da902b7b1e3832ac00c995fbd3d691d34b20b00.png" src="_images/fb038bf6a3cc034476a52cae2da902b7b1e3832ac00c995fbd3d691d34b20b00.png" />
 </div>
 </div>
+<ol class="arabic simple">
+<li><p>Evaluasi Clustering (Hasil Numerik)</p></li>
+</ol>
+<ul class="simple">
+<li><p>Inertia: Nilai 73.15 menunjukkan seberapa erat data dalam cluster mereka. Semakin rendah nilai inertia, semakin baik pengelompokan.</p></li>
+<li><p>Silhouette Score: Nilai 0.8254 menunjukkan seberapa baik setiap data cocok dengan cluster-nya. Semakin tinggi nilainya, semakin bagus cluster yang terbentuk.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Visualisasi Pengelompokan (Scatter Plot)</p></li>
+</ol>
+<ul class="simple">
+<li><p>Grafik menunjukkan hasil clustering dengan 3 cluster, di mana setiap titik data memiliki warna sesuai dengan cluster yang diberikan oleh K-Means.</p></li>
+<li><p>Warna berbeda digunakan untuk menunjukkan kelompok data yang terbentuk berdasarkan pola yang ditemukan oleh algoritma.</p></li>
+<li><p>Sumbu X dan Y mewakili hasil dari reduksi dimensi menggunakan PCA, yang merangkum informasi penting dari data dalam 2 dimensi.</p></li>
+<li><p>Grid ditambahkan untuk memudahkan analisis posisi titik-titik data</p></li>
+</ul>
+<p>Kode ini membantu memahami apakah 3 cluster lebih optimal dibandingkan 2 cluster sebelumnya. Dengan membandingkan nilai silhouette score, dapat melihat apakah pengelompokan menjadi lebih jelas. Jika skor lebih tinggi, artinya data memang memiliki pola yang lebih cocok dengan 3 cluster dibanding 2.</p>
 </section>
 <section id="clustering-visualisasi-4-cluster">
 <h2>Clustering + Visualisasi (4 Cluster)<a class="headerlink" href="#clustering-visualisasi-4-cluster" title="Link to this heading">#</a></h2>
@@ -752,6 +786,28 @@
 <img alt="_images/ed3529871fb1f64775ed2930f7b94a8109f9c8761fbcbe2be500f51ca6f540ed.png" src="_images/ed3529871fb1f64775ed2930f7b94a8109f9c8761fbcbe2be500f51ca6f540ed.png" />
 </div>
 </div>
+<ol class="arabic simple">
+<li><p>Evaluasi Clustering (Hasil Numerik)</p></li>
+</ol>
+<ul class="simple">
+<li><p>Inertia: Nilai 62.71 menunjukkan seberapa erat data dalam cluster mereka. Nilai inertia yang lebih rendah dibandingkan sebelumnya (dengan 2 atau 3 cluster) menunjukkan bahwa data lebih terkelompok secara kompak.</p></li>
+<li><p>Silhouette Score: Nilai 0.7945 menunjukkan kualitas cluster yang terbentuk. Semakin tinggi nilai ini, semakin baik pengelompokan. Dibandingkan dengan 2 atau 3 cluster, skor ini sedikit lebih rendah, yang bisa menunjukkan bahwa menambah jumlah cluster tidak selalu menghasilkan pemisahan yang lebih optimal.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Visualisasi Pengelompokan (Scatter Plot)</p></li>
+</ol>
+<ul class="simple">
+<li><p>Titik-titik dalam grafik menunjukkan sampel data yang telah dikurangi dimensinya menggunakan PCA, sehingga hanya ada dua komponen utama (sumbu X dan Y).</p></li>
+<li><p>Warna titik menunjukkan cluster tempat data tersebut berada, dengan masing-masing cluster memiliki warna yang berbeda.</p></li>
+<li><p>Sumbu X dan Y adalah PCA 1 dan PCA 2, yang merupakan dua komponen utama hasil reduksi dimensi dari fitur asli.</p></li>
+<li><p>Grid dan label membantu memperjelas posisi setiap cluster dalam grafik.</p></li>
+</ul>
+<p>Kesimpulan</p>
+<ul class="simple">
+<li><p>Menambah jumlah cluster (dari 2 dan 3 ke 4) memang menurunkan nilai inertia, tetapi juga sedikit menurunkan silhouette score, yang bisa berarti cluster mulai menjadi lebih tumpang tindih atau kurang terpisah dengan jelas.</p></li>
+<li><p>Visualisasi scatter plot menunjukkan bagaimana data terbagi ke dalam 4 kelompok.</p></li>
+<li><p>bisa menggunakan grafik dan angka evaluasi untuk menentukan apakah 4 cluster lebih baik dibandingkan jumlah cluster sebelumnya.</p></li>
+</ul>
 </section>
 </section>
 
