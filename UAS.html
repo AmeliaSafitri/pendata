@@ -1,0 +1,1548 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>UAS &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UAS';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tugas Pra UAS" href="TugasPraUAS.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/foto emi.jpg" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/foto emi.jpg" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to Amelia’s Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tugas1.html">Tugas 1 Data mining</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tugas2.html"><strong>Tugas 2 Data Understanding</strong></a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="LOF.html">LOF</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="K_Means.html">K-MEANS CLUSTER 2, 3 DAN 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Fuzzy_CMeans.html">FUZZY C-MEANS CLUSTERING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Decision_tree.html">Tugas Decision_tree</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diskrititasi.html">Diskrititasi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TugasPraUAS.html">Tugas Pra UAS</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">UAS</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FUAS.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UAS.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>UAS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset"><strong>Dataset</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding"><strong>1.	Data understanding</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-jelaskan-setiap-fitur-atau-variable-data-tersebut">a.	Jelaskan setiap fitur atau variable data tersebut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-eksplorasi-data-kualitas-data">b. Eksplorasi Data: Kualitas Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-visualisasikan-data-tersebut">c.	Visualisasikan data tersebut</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepocessing-data-tersebut"><strong>2.	Prepocessing data tersebut</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling"><strong>3. Modelling</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi"><strong>4. Evaluasi</strong></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="uas">
+<h1>UAS<a class="headerlink" href="#uas" title="Link to this heading">#</a></h1>
+<section id="dataset">
+<h2><strong>Dataset</strong><a class="headerlink" href="#dataset" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records">https://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ucimlrepo</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: ucimlrepo in /usr/local/python/3.12.1/lib/python3.12/site-packages (0.0.7)
+Requirement already satisfied: pandas&gt;=1.0.0 in /home/codespace/.local/lib/python3.12/site-packages (from ucimlrepo) (2.2.3)
+Requirement already satisfied: certifi&gt;=2020.12.5 in /home/codespace/.local/lib/python3.12/site-packages (from ucimlrepo) (2024.8.30)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numpy&gt;=1.26.0 in /home/codespace/.local/lib/python3.12/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2.2.0)
+Requirement already satisfied: python-dateutil&gt;=2.8.2 in /home/codespace/.local/lib/python3.12/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2.9.0.post0)
+Requirement already satisfied: pytz&gt;=2020.1 in /home/codespace/.local/lib/python3.12/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2024.2)
+Requirement already satisfied: tzdata&gt;=2022.7 in /home/codespace/.local/lib/python3.12/site-packages (from pandas&gt;=1.0.0-&gt;ucimlrepo) (2024.2)
+Requirement already satisfied: six&gt;=1.5 in /home/codespace/.local/lib/python3.12/site-packages (from python-dateutil&gt;=2.8.2-&gt;pandas&gt;=1.0.0-&gt;ucimlrepo) (1.17.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">24.3.1</span> -&gt; <span class=" -Color -Color-Green">25.1.1</span>
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">python3 -m pip install --upgrade pip</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Note: you may need to restart the kernel to use updated packages.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span>
+
+<span class="c1"># fetch dataset</span>
+<span class="n">heart_failure_clinical_records</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">519</span><span class="p">)</span>
+
+<span class="c1"># data (as pandas dataframes)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">heart_failure_clinical_records</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">heart_failure_clinical_records</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">targets</span>
+
+<span class="c1"># metadata</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">heart_failure_clinical_records</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
+
+<span class="c1"># variable information</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">heart_failure_clinical_records</span><span class="o">.</span><span class="n">variables</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;uci_id&#39;: 519, &#39;name&#39;: &#39;Heart Failure Clinical Records&#39;, &#39;repository_url&#39;: &#39;https://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records&#39;, &#39;data_url&#39;: &#39;https://archive.ics.uci.edu/static/public/519/data.csv&#39;, &#39;abstract&#39;: &#39;This dataset contains the medical records of 299 patients who had heart failure, collected during their follow-up period, where each patient profile has 13 clinical features.&#39;, &#39;area&#39;: &#39;Health and Medicine&#39;, &#39;tasks&#39;: [&#39;Classification&#39;, &#39;Regression&#39;, &#39;Clustering&#39;], &#39;characteristics&#39;: [&#39;Multivariate&#39;], &#39;num_instances&#39;: 299, &#39;num_features&#39;: 12, &#39;feature_types&#39;: [&#39;Integer&#39;, &#39;Real&#39;], &#39;demographics&#39;: [&#39;Age&#39;, &#39;Sex&#39;], &#39;target_col&#39;: [&#39;death_event&#39;], &#39;index_col&#39;: None, &#39;has_missing_values&#39;: &#39;no&#39;, &#39;missing_values_symbol&#39;: None, &#39;year_of_dataset_creation&#39;: 2020, &#39;last_updated&#39;: &#39;Mon Feb 26 2024&#39;, &#39;dataset_doi&#39;: &#39;10.24432/C5Z89R&#39;, &#39;creators&#39;: [], &#39;intro_paper&#39;: {&#39;ID&#39;: 286, &#39;type&#39;: &#39;NATIVE&#39;, &#39;title&#39;: &#39;Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone&#39;, &#39;authors&#39;: &#39;D. Chicco, Giuseppe Jurman&#39;, &#39;venue&#39;: &#39;BMC Medical Informatics and Decision Making&#39;, &#39;year&#39;: 2020, &#39;journal&#39;: None, &#39;DOI&#39;: None, &#39;URL&#39;: &#39;https://www.semanticscholar.org/paper/e64579d8593140396b518682bb3a47ba246684eb&#39;, &#39;sha&#39;: None, &#39;corpus&#39;: None, &#39;arxiv&#39;: None, &#39;mag&#39;: None, &#39;acl&#39;: None, &#39;pmid&#39;: &#39;32013925&#39;, &#39;pmcid&#39;: None}, &#39;additional_info&#39;: {&#39;summary&#39;: &#39;A detailed description of the dataset can be found in the Dataset section of the following paper: \r\n\r\nDavide Chicco, Giuseppe Jurman: &quot;Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone&quot;. BMC Medical Informatics and Decision Making 20, 16 (2020). https://doi.org/10.1186/s12911-020-1023-5 \r\n&#39;, &#39;purpose&#39;: None, &#39;funded_by&#39;: None, &#39;instances_represent&#39;: None, &#39;recommended_data_splits&#39;: None, &#39;sensitive_data&#39;: None, &#39;preprocessing_description&#39;: None, &#39;variable_info&#39;: &#39;Thirteen (13) clinical features:\n\n- age: age of the patient (years)\n- anaemia: decrease of red blood cells or hemoglobin (boolean)\n- creatinine phosphokinase  (CPK): level of the CPK enzyme in the blood (mcg/L)\n- diabetes: if the patient has diabetes (boolean)\n- ejection fraction: percentage of blood leaving the heart at each contraction  (percentage)\n- high blood pressure: if the patient has hypertension (boolean)\n- platelets: platelets in the blood (kiloplatelets/mL)\n- sex: woman or man (binary)\n- serum creatinine: level of serum creatinine in the blood (mg/dL)\n- serum sodium: level of serum sodium in the blood (mEq/L)\n- smoking: if the patient smokes or not (boolean)\n- time: follow-up period (days)\n- [target] death event: if the patient died during the follow-up period (boolean)\n\nFor more information, please check Table 1, Table 2, and Table 3 of the following paper: \n\nDavide Chicco, Giuseppe Jurman: &quot;Machine learning can predict survival of patients with heart failure from serum creatinine and ejection fraction alone&quot;. BMC Medical Informatics and Decision Making 20, 16 (2020). https://doi.org/10.1186/s12911-020-1023-5 \n&#39;, &#39;citation&#39;: None}}
+                        name     role        type demographic  \
+0                        age  Feature     Integer         Age   
+1                    anaemia  Feature      Binary        None   
+2   creatinine_phosphokinase  Feature     Integer        None   
+3                   diabetes  Feature      Binary        None   
+4          ejection_fraction  Feature     Integer        None   
+5        high_blood_pressure  Feature      Binary        None   
+6                  platelets  Feature  Continuous        None   
+7           serum_creatinine  Feature  Continuous        None   
+8               serum_sodium  Feature     Integer        None   
+9                        sex  Feature      Binary         Sex   
+10                   smoking  Feature      Binary        None   
+11                      time  Feature     Integer        None   
+12               death_event   Target      Binary        None   
+
+                                          description             units  \
+0                                  age of the patient             years   
+1           decrease of red blood cells or hemoglobin              None   
+2                level of the CPK enzyme in the blood             mcg/L   
+3                         if the patient has diabetes              None   
+4   percentage of blood leaving the heart at each ...                 %   
+5                     if the patient has hypertension              None   
+6                              platelets in the blood  kiloplatelets/mL   
+7              level of serum creatinine in the blood             mg/dL   
+8                  level of serum sodium in the blood             mEq/L   
+9                                        woman or man              None   
+10                       if the patient smokes or not              None   
+11                                   follow-up period              days   
+12    if the patient died during the follow-up period              None   
+
+   missing_values  
+0              no  
+1              no  
+2              no  
+3              no  
+4              no  
+5              no  
+6              no  
+7              no  
+8              no  
+9              no  
+10             no  
+11             no  
+12             no  
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-understanding">
+<h2><strong>1.	Data understanding</strong><a class="headerlink" href="#data-understanding" title="Link to this heading">#</a></h2>
+<section id="a-jelaskan-setiap-fitur-atau-variable-data-tersebut">
+<h3>a.	Jelaskan setiap fitur atau variable data tersebut<a class="headerlink" href="#a-jelaskan-setiap-fitur-atau-variable-data-tersebut" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Nama Fitur</strong></p></th>
+<th class="head"><p><strong>Tipe Data</strong></p></th>
+<th class="head"><p><strong>Demografi</strong></p></th>
+<th class="head"><p><strong>Deskripsi</strong></p></th>
+<th class="head"><p><strong>Satuan</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">age</span></code></p></td>
+<td><p>Integer</p></td>
+<td><p>Age</p></td>
+<td><p>Umur pasien</p></td>
+<td><p>years</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">anaemia</span></code></p></td>
+<td><p>Binary</p></td>
+<td><p>-</p></td>
+<td><p>Menunjukkan apakah pasien mengalami anemia (penurunan sel darah merah)</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">creatinine_phosphokinase</span></code></p></td>
+<td><p>Integer</p></td>
+<td><p>-</p></td>
+<td><p>Tingkat enzim CPK dalam darah (penanda kerusakan otot, termasuk jantung)</p></td>
+<td><p>mcg/L</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">diabetes</span></code></p></td>
+<td><p>Binary</p></td>
+<td><p>-</p></td>
+<td><p>Menunjukkan apakah pasien menderita diabetes</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ejection_fraction</span></code></p></td>
+<td><p>Integer</p></td>
+<td><p>-</p></td>
+<td><p>Persentase darah yang keluar dari jantung setiap detak</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">high_blood_pressure</span></code></p></td>
+<td><p>Binary</p></td>
+<td><p>-</p></td>
+<td><p>Menunjukkan apakah pasien memiliki tekanan darah tinggi</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">platelets</span></code></p></td>
+<td><p>Continuous</p></td>
+<td><p>-</p></td>
+<td><p>Jumlah trombosit dalam darah</p></td>
+<td><p>kiloplatelets/mL</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">serum_creatinine</span></code></p></td>
+<td><p>Continuous</p></td>
+<td><p>-</p></td>
+<td><p>Tingkat kreatinin dalam serum (indikator fungsi ginjal)</p></td>
+<td><p>mg/dL</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">serum_sodium</span></code></p></td>
+<td><p>Integer</p></td>
+<td><p>-</p></td>
+<td><p>Tingkat natrium dalam serum</p></td>
+<td><p>mEq/L</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">sex</span></code></p></td>
+<td><p>Binary</p></td>
+<td><p>Sex</p></td>
+<td><p>Jenis kelamin pasien (0 = wanita, 1 = pria)</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">smoking</span></code></p></td>
+<td><p>Binary</p></td>
+<td><p>-</p></td>
+<td><p>Menunjukkan apakah pasien merokok</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">time</span></code></p></td>
+<td><p>Integer</p></td>
+<td><p>-</p></td>
+<td><p>Durasi tindak lanjut pasien selama penelitian</p></td>
+<td><p>days</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">death_event</span></code></p></td>
+<td><p>Binary (Target)</p></td>
+<td><p>-</p></td>
+<td><p>Menunjukkan apakah pasien meninggal selama masa tindak lanjut (0 = tidak, 1 = ya)</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="b-eksplorasi-data-kualitas-data">
+<h3>b. Eksplorasi Data: Kualitas Data<a class="headerlink" href="#b-eksplorasi-data-kualitas-data" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1"># --- Load dataset ---</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="c1"># --- Tampilkan beberapa baris awal dan kolom ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contoh data:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kolom-kolom yang tersedia:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+<span class="c1"># --- 1. Cek Missing Values ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Missing Values per Kolom:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+
+<span class="c1"># --- 2. Cek Tipe Data ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Tipe Data per Kolom:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+
+<span class="c1"># --- 3. Ringkasan Statistik Deskriptif ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Statistik Deskriptif:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+
+<span class="c1"># --- 4. Distribusi Nilai untuk Variabel Binary ---</span>
+<span class="c1"># Kolom-kolom binary berdasarkan deskripsi dataset UCI</span>
+<span class="n">binary_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;anaemia&#39;</span><span class="p">,</span> <span class="s1">&#39;diabetes&#39;</span><span class="p">,</span> <span class="s1">&#39;high_blood_pressure&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">,</span> <span class="s1">&#39;smoking&#39;</span><span class="p">,</span> <span class="s1">&#39;DEATH_EVENT&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">binary_cols</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Distribusi nilai pada kolom </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kolom &#39;</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&#39; tidak ditemukan di dataset.&quot;</span><span class="p">)</span>
+
+<span class="c1"># --- 5. Deteksi Outlier dengan Boxplot ---</span>
+<span class="n">numerical_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;creatinine_phosphokinase&#39;</span><span class="p">,</span> <span class="s1">&#39;ejection_fraction&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;platelets&#39;</span><span class="p">,</span> <span class="s1">&#39;serum_creatinine&#39;</span><span class="p">,</span> <span class="s1">&#39;serum_sodium&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">numerical_cols</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Boxplot </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># --- 6. Deteksi Nilai Tidak Wajar (contoh) ---</span>
+<span class="c1"># Ejection fraction &gt; 100%</span>
+<span class="n">invalid_ef</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;ejection_fraction&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Data dengan ejection_fraction &gt; 100%:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">invalid_ef</span><span class="p">)</span>
+
+<span class="c1"># Serum sodium diluar batas normal (normal: 135 - 145 mEq/L)</span>
+<span class="n">abnormal_sodium</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;serum_sodium&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">120</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;serum_sodium&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">150</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Data dengan serum_sodium tidak normal:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">abnormal_sodium</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Contoh data:
+     age  anaemia  creatinine_phosphokinase  diabetes  ejection_fraction  \
+0  75.0        0                       582         0                 20   
+1  55.0        0                      7861         0                 38   
+2  65.0        0                       146         0                 20   
+3  50.0        1                       111         0                 20   
+4  65.0        1                       160         1                 20   
+
+   high_blood_pressure  platelets  serum_creatinine  serum_sodium  sex  \
+0                    1  265000.00               1.9           130    1   
+1                    0  263358.03               1.1           136    1   
+2                    0  162000.00               1.3           129    1   
+3                    0  210000.00               1.9           137    1   
+4                    0  327000.00               2.7           116    0   
+
+   smoking  time  DEATH_EVENT  
+0        0     4            1  
+1        0     6            1  
+2        1     7            1  
+3        0     7            1  
+4        0     8            1  
+
+Kolom-kolom yang tersedia:
+ [&#39;age&#39;, &#39;anaemia&#39;, &#39;creatinine_phosphokinase&#39;, &#39;diabetes&#39;, &#39;ejection_fraction&#39;, &#39;high_blood_pressure&#39;, &#39;platelets&#39;, &#39;serum_creatinine&#39;, &#39;serum_sodium&#39;, &#39;sex&#39;, &#39;smoking&#39;, &#39;time&#39;, &#39;DEATH_EVENT&#39;]
+
+Missing Values per Kolom:
+ age                         0
+anaemia                     0
+creatinine_phosphokinase    0
+diabetes                    0
+ejection_fraction           0
+high_blood_pressure         0
+platelets                   0
+serum_creatinine            0
+serum_sodium                0
+sex                         0
+smoking                     0
+time                        0
+DEATH_EVENT                 0
+dtype: int64
+
+Tipe Data per Kolom:
+ age                         float64
+anaemia                       int64
+creatinine_phosphokinase      int64
+diabetes                      int64
+ejection_fraction             int64
+high_blood_pressure           int64
+platelets                   float64
+serum_creatinine            float64
+serum_sodium                  int64
+sex                           int64
+smoking                       int64
+time                          int64
+DEATH_EVENT                   int64
+dtype: object
+
+Statistik Deskriptif:
+               age     anaemia  creatinine_phosphokinase    diabetes  \
+count  299.000000  299.000000                299.000000  299.000000   
+mean    60.833893    0.431438                581.839465    0.418060   
+std     11.894809    0.496107                970.287881    0.494067   
+min     40.000000    0.000000                 23.000000    0.000000   
+25%     51.000000    0.000000                116.500000    0.000000   
+50%     60.000000    0.000000                250.000000    0.000000   
+75%     70.000000    1.000000                582.000000    1.000000   
+max     95.000000    1.000000               7861.000000    1.000000   
+
+       ejection_fraction  high_blood_pressure      platelets  \
+count         299.000000           299.000000     299.000000   
+mean           38.083612             0.351171  263358.029264   
+std            11.834841             0.478136   97804.236869   
+min            14.000000             0.000000   25100.000000   
+25%            30.000000             0.000000  212500.000000   
+50%            38.000000             0.000000  262000.000000   
+75%            45.000000             1.000000  303500.000000   
+max            80.000000             1.000000  850000.000000   
+
+       serum_creatinine  serum_sodium         sex    smoking        time  \
+count         299.00000    299.000000  299.000000  299.00000  299.000000   
+mean            1.39388    136.625418    0.648829    0.32107  130.260870   
+std             1.03451      4.412477    0.478136    0.46767   77.614208   
+min             0.50000    113.000000    0.000000    0.00000    4.000000   
+25%             0.90000    134.000000    0.000000    0.00000   73.000000   
+50%             1.10000    137.000000    1.000000    0.00000  115.000000   
+75%             1.40000    140.000000    1.000000    1.00000  203.000000   
+max             9.40000    148.000000    1.000000    1.00000  285.000000   
+
+       DEATH_EVENT  
+count    299.00000  
+mean       0.32107  
+std        0.46767  
+min        0.00000  
+25%        0.00000  
+50%        0.00000  
+75%        1.00000  
+max        1.00000  
+
+Distribusi nilai pada kolom anaemia:
+ anaemia
+0    170
+1    129
+Name: count, dtype: int64
+
+Distribusi nilai pada kolom diabetes:
+ diabetes
+0    174
+1    125
+Name: count, dtype: int64
+
+Distribusi nilai pada kolom high_blood_pressure:
+ high_blood_pressure
+0    194
+1    105
+Name: count, dtype: int64
+
+Distribusi nilai pada kolom sex:
+ sex
+1    194
+0    105
+Name: count, dtype: int64
+
+Distribusi nilai pada kolom smoking:
+ smoking
+0    203
+1     96
+Name: count, dtype: int64
+
+Distribusi nilai pada kolom DEATH_EVENT:
+ DEATH_EVENT
+0    203
+1     96
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="_images/648d989cd6d93cbde58b8676f9a623a019ece04a353f83a13db1f3f8ed43038f.png" src="_images/648d989cd6d93cbde58b8676f9a623a019ece04a353f83a13db1f3f8ed43038f.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Data dengan ejection_fraction &gt; 100%:
+ Empty DataFrame
+Columns: [age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure, platelets, serum_creatinine, serum_sodium, sex, smoking, time, DEATH_EVENT]
+Index: []
+
+Data dengan serum_sodium tidak normal:
+       age  anaemia  creatinine_phosphokinase  diabetes  ejection_fraction  \
+4    65.0        1                       160         1                 20   
+199  60.0        0                      1211         1                 35   
+
+     high_blood_pressure  platelets  serum_creatinine  serum_sodium  sex  \
+4                      0  327000.00               2.7           116    0   
+199                    0  263358.03               1.8           113    1   
+
+     smoking  time  DEATH_EVENT  
+4          0     8            1  
+199        1   186            0  
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Tujuan Utama Kode</strong></p>
+<ol class="arabic simple">
+<li><p>Mengimpor dan menampilkan data:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Mengunduh dataset dari URL</p></li>
+<li><p>Melihat struktur awal data (head()) dan nama-nama kolom</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Pemeriksaan kualitas data:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Mengetahui apakah ada missing values</p></li>
+<li><p>Mengetahui tipe data di setiap kolom (int, float, dsb.)</p></li>
+<li><p>Menampilkan statistik deskriptif seperti mean, median, std dev</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Analisis variabel kategori (biner):</p></li>
+</ol>
+<ul class="simple">
+<li><p>Mengetahui distribusi nilai untuk variabel binary seperti: anaemia, diabetes, high_blood_pressure, sex, smoking, DEATH_EVENT</p></li>
+<li><p>Berguna untuk memahami proporsi pasien dengan kondisi tertentu</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Deteksi outlier:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Menampilkan boxplot untuk variabel numerik</p></li>
+<li><p>Membantu melihat apakah ada nilai ekstrem yang tidak wajar</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p>Validasi nilai medis abnormal:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Contoh:</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>ejection_fraction seharusnya ≤ 100%, jadi nilai &gt; 100 dicari</p></li>
+<li><p>serum_sodium normalnya 135–145 mEq/L, jadi nilai di luar itu diperiksa</p></li>
+</ol>
+</section>
+<section id="c-visualisasikan-data-tersebut">
+<h3>c.	Visualisasikan data tersebut<a class="headerlink" href="#c-visualisasikan-data-tersebut" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1"># --- Load dataset ---</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="c1"># --- Tampilkan info dasar dataset ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contoh data:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kolom-kolom yang tersedia:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+<span class="c1"># --- 1. Heatmap Korelasi antar Fitur Numerik ---</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Heatmap Korelasi antar Fitur&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># --- 2. Distribusi Target DEATH_EVENT ---</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;DEATH_EVENT&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribusi Target: DEATH_EVENT (0 = Hidup, 1 = Meninggal)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;DEATH_EVENT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Jumlah Pasien&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># --- 3. Distribusi Usia Pasien ---</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">],</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribusi Usia Pasien&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Usia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frekuensi&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># --- 4. Boxplot Usia berdasarkan DEATH_EVENT ---</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;DEATH_EVENT&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set3&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot Usia berdasarkan DEATH_EVENT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;DEATH_EVENT (0 = Hidup, 1 = Meninggal)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Usia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># --- 5. Distribusi Fitur Biner ---</span>
+<span class="n">binary_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;anaemia&#39;</span><span class="p">,</span> <span class="s1">&#39;diabetes&#39;</span><span class="p">,</span> <span class="s1">&#39;high_blood_pressure&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">,</span> <span class="s1">&#39;smoking&#39;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">binary_cols</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">col</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;pastel&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Distribusi: </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Jumlah&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># --- 6. Pairplot: hubungan antar fitur penting ---</span>
+<span class="n">subset_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;ejection_fraction&#39;</span><span class="p">,</span> <span class="s1">&#39;serum_creatinine&#39;</span><span class="p">,</span> <span class="s1">&#39;DEATH_EVENT&#39;</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">subset_cols</span><span class="p">],</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;DEATH_EVENT&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;husl&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Hubungan Beberapa Fitur Terhadap Kematian&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.02</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Contoh data:
+     age  anaemia  creatinine_phosphokinase  diabetes  ejection_fraction  \
+0  75.0        0                       582         0                 20   
+1  55.0        0                      7861         0                 38   
+2  65.0        0                       146         0                 20   
+3  50.0        1                       111         0                 20   
+4  65.0        1                       160         1                 20   
+
+   high_blood_pressure  platelets  serum_creatinine  serum_sodium  sex  \
+0                    1  265000.00               1.9           130    1   
+1                    0  263358.03               1.1           136    1   
+2                    0  162000.00               1.3           129    1   
+3                    0  210000.00               1.9           137    1   
+4                    0  327000.00               2.7           116    0   
+
+   smoking  time  DEATH_EVENT  
+0        0     4            1  
+1        0     6            1  
+2        1     7            1  
+3        0     7            1  
+4        0     8            1  
+
+Kolom-kolom yang tersedia:
+ [&#39;age&#39;, &#39;anaemia&#39;, &#39;creatinine_phosphokinase&#39;, &#39;diabetes&#39;, &#39;ejection_fraction&#39;, &#39;high_blood_pressure&#39;, &#39;platelets&#39;, &#39;serum_creatinine&#39;, &#39;serum_sodium&#39;, &#39;sex&#39;, &#39;smoking&#39;, &#39;time&#39;, &#39;DEATH_EVENT&#39;]
+</pre></div>
+</div>
+<img alt="_images/2fa6812e5f2800d0fa991ecbea0ce4f156377304283cd649828237dc55b45a02.png" src="_images/2fa6812e5f2800d0fa991ecbea0ce4f156377304283cd649828237dc55b45a02.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3671/2528292169.py:21: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(data=df, x=&#39;DEATH_EVENT&#39;, palette=&#39;Set2&#39;)
+</pre></div>
+</div>
+<img alt="_images/f5896d3251f54a964f263a6371627c500cfc0adef872f953da81ae361e9dbbe5.png" src="_images/f5896d3251f54a964f263a6371627c500cfc0adef872f953da81ae361e9dbbe5.png" />
+<img alt="_images/3c6da6db37ca34d3e43ed5f7845cd2b29d6407abe998f969328f041c44bdc0d3.png" src="_images/3c6da6db37ca34d3e43ed5f7845cd2b29d6407abe998f969328f041c44bdc0d3.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3671/2528292169.py:37: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(data=df, x=&#39;DEATH_EVENT&#39;, y=&#39;age&#39;, palette=&#39;Set3&#39;)
+</pre></div>
+</div>
+<img alt="_images/01dda61cbd6b948be312bc0405071196a765d2695a97cd7540fad879342bbce4.png" src="_images/01dda61cbd6b948be312bc0405071196a765d2695a97cd7540fad879342bbce4.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3671/2528292169.py:48: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(data=df, x=col, palette=&#39;pastel&#39;)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3671/2528292169.py:48: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(data=df, x=col, palette=&#39;pastel&#39;)
+/tmp/ipykernel_3671/2528292169.py:48: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(data=df, x=col, palette=&#39;pastel&#39;)
+/tmp/ipykernel_3671/2528292169.py:48: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(data=df, x=col, palette=&#39;pastel&#39;)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3671/2528292169.py:48: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(data=df, x=col, palette=&#39;pastel&#39;)
+</pre></div>
+</div>
+<img alt="_images/dbc9c4d07d44d4bfc6f3b97f53a4afdc1a4b9509901d02411a2ee86a664ddf4e.png" src="_images/dbc9c4d07d44d4bfc6f3b97f53a4afdc1a4b9509901d02411a2ee86a664ddf4e.png" />
+<img alt="_images/133a9daff1595d511ce303f7784b3fc7149dae32f50cfb700795b58a1ee64e13.png" src="_images/133a9daff1595d511ce303f7784b3fc7149dae32f50cfb700795b58a1ee64e13.png" />
+</div>
+</div>
+<p><strong>Tujuan dari code</strong></p>
+<ol class="arabic simple">
+<li><p>Heatmap Korelasi antar Fitur</p></li>
+</ol>
+<ul class="simple">
+<li><p>Menampilkan korelasi antar fitur numerik dalam bentuk heatmap.</p></li>
+<li><p>Membantu mengidentifikasi fitur yang saling berkorelasi tinggi atau tidak.</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Distribusi Target (DEATH_EVENT)</p></li>
+</ol>
+<ul class="simple">
+<li><p>Visualisasi jumlah pasien meninggal (1) dan hidup (0).</p></li>
+<li><p>Menunjukkan apakah data target imbalanced atau seimbang.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Distribusi Usia Pasien</p></li>
+</ol>
+<ul class="simple">
+<li><p>Histogram usia untuk memahami rentang dan penyebaran pasien.</p></li>
+<li><p>Apakah lebih banyak pasien lansia atau muda.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Boxplot Usia vs DEATH_EVENT</p></li>
+</ol>
+<ul class="simple">
+<li><p>Melihat hubungan usia dengan kematian.</p></li>
+<li><p>Apakah pasien yang meninggal cenderung lebih tua?</p></li>
+</ul>
+<ol class="arabic simple" start="5">
+<li><p>Distribusi Fitur Biner</p></li>
+</ol>
+<ul class="simple">
+<li><p>Melihat proporsi pasien berdasarkan kondisi seperti: Anemia, diabetes, tekanan darah tinggi, jenis kelamin, dan perokok.</p></li>
+<li><p>Untuk tahu apakah fitur-fitur ini seimbang atau tidak.</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>Pairplot antar Fitur Penting</p></li>
+</ol>
+<ul class="simple">
+<li><p>Visualisasi gabungan antara:age, ejection_fraction, serum_creatinine, dan DEATH_EVENT</p></li>
+<li><p>Untuk melihat hubungan dan pola kelompok pasien yang meninggal vs tidak.</p></li>
+</ul>
+</section>
+</section>
+<section id="prepocessing-data-tersebut">
+<h2><strong>2.	Prepocessing data tersebut</strong><a class="headerlink" href="#prepocessing-data-tersebut" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- 1. Import Library ---</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1"># --- 2. Load Dataset ---</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/00519/heart_failure_clinical_records_dataset.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="c1"># --- 3. Cek Struktur Data ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5 data pertama:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Informasi dataset:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+
+<span class="c1"># --- 4. Cek Missing Values ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Missing values:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+
+<span class="c1"># --- 5. Cek Duplikasi ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Jumlah duplikasi:&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+<span class="c1"># --- 6. Pisahkan Fitur dan Target ---</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;DEATH_EVENT&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;DEATH_EVENT&quot;</span><span class="p">]</span>
+
+<span class="c1"># --- 7. Normalisasi / Standardisasi Fitur Numerik ---</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">X_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="c1"># --- 8. Split Data ke Training dan Testing Set ---</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">X_scaled</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span>
+<span class="p">)</span>
+
+<span class="c1"># --- 9. Cek Hasil Preprocessing ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Ukuran X_train:&quot;</span><span class="p">,</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ukuran X_test:&quot;</span><span class="p">,</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distribusi y_train:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distribusi y_test:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5 data pertama:
+     age  anaemia  creatinine_phosphokinase  diabetes  ejection_fraction  \
+0  75.0        0                       582         0                 20   
+1  55.0        0                      7861         0                 38   
+2  65.0        0                       146         0                 20   
+3  50.0        1                       111         0                 20   
+4  65.0        1                       160         1                 20   
+
+   high_blood_pressure  platelets  serum_creatinine  serum_sodium  sex  \
+0                    1  265000.00               1.9           130    1   
+1                    0  263358.03               1.1           136    1   
+2                    0  162000.00               1.3           129    1   
+3                    0  210000.00               1.9           137    1   
+4                    0  327000.00               2.7           116    0   
+
+   smoking  time  DEATH_EVENT  
+0        0     4            1  
+1        0     6            1  
+2        1     7            1  
+3        0     7            1  
+4        0     8            1  
+
+Informasi dataset:
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 299 entries, 0 to 298
+Data columns (total 13 columns):
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   age                       299 non-null    float64
+ 1   anaemia                   299 non-null    int64  
+ 2   creatinine_phosphokinase  299 non-null    int64  
+ 3   diabetes                  299 non-null    int64  
+ 4   ejection_fraction         299 non-null    int64  
+ 5   high_blood_pressure       299 non-null    int64  
+ 6   platelets                 299 non-null    float64
+ 7   serum_creatinine          299 non-null    float64
+ 8   serum_sodium              299 non-null    int64  
+ 9   sex                       299 non-null    int64  
+ 10  smoking                   299 non-null    int64  
+ 11  time                      299 non-null    int64  
+ 12  DEATH_EVENT               299 non-null    int64  
+dtypes: float64(3), int64(10)
+memory usage: 30.5 KB
+None
+
+Missing values:
+ age                         0
+anaemia                     0
+creatinine_phosphokinase    0
+diabetes                    0
+ejection_fraction           0
+high_blood_pressure         0
+platelets                   0
+serum_creatinine            0
+serum_sodium                0
+sex                         0
+smoking                     0
+time                        0
+DEATH_EVENT                 0
+dtype: int64
+
+Jumlah duplikasi: 0
+
+Ukuran X_train: (239, 12)
+Ukuran X_test: (60, 12)
+Distribusi y_train:
+ DEATH_EVENT
+0    0.677824
+1    0.322176
+Name: proportion, dtype: float64
+Distribusi y_test:
+ DEATH_EVENT
+0    0.683333
+1    0.316667
+Name: proportion, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Preprocessing dataset <em>Heart Failure Clinical Records</em> dilakukan untuk menyiapkan data sebelum pemodelan. Langkah awal dimulai dengan mengimpor pustaka penting, membaca data dari UCI, dan mengecek struktur serta kebersihan data, termasuk missing values dan duplikasi. Data kemudian dipisah menjadi fitur (X) dan target (<code class="docutils literal notranslate"><span class="pre">DEATH_EVENT</span></code>), lalu fitur dinormalisasi menggunakan <code class="docutils literal notranslate"><span class="pre">StandardScaler</span></code> agar berada pada skala yang sama. Setelah itu, data dibagi menjadi data latih (80%) dan data uji (20%) dengan <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code> dan <code class="docutils literal notranslate"><span class="pre">stratify</span></code> untuk menjaga proporsi kelas. Langkah terakhir adalah memverifikasi ukuran dan distribusi data agar siap digunakan dalam pemodelan machine learning.</p>
+</section>
+<section id="modelling">
+<h2><strong>3. Modelling</strong><a class="headerlink" href="#modelling" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- 1. Import Library Tambahan ---</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># --- 2. Inisialisasi Model ---</span>
+<span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;SVM&quot;</span><span class="p">:</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s2">&quot;Random Forest&quot;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s2">&quot;Naive Bayes&quot;</span><span class="p">:</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="c1"># --- 3. Training, Prediksi &amp; Evaluasi ---</span>
+<span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">output_dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">precision</span> <span class="o">=</span> <span class="n">report</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">][</span><span class="s1">&#39;precision&#39;</span><span class="p">]</span>
+    <span class="n">recall</span> <span class="o">=</span> <span class="n">report</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">][</span><span class="s1">&#39;recall&#39;</span><span class="p">]</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="n">report</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">][</span><span class="s1">&#39;f1-score&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Simpan hasil evaluasi</span>
+    <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s1">&#39;Model&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+        <span class="s1">&#39;Accuracy&#39;</span><span class="p">:</span> <span class="n">acc</span><span class="p">,</span>
+        <span class="s1">&#39;Precision&#39;</span><span class="p">:</span> <span class="n">precision</span><span class="p">,</span>
+        <span class="s1">&#39;Recall&#39;</span><span class="p">:</span> <span class="n">recall</span><span class="p">,</span>
+        <span class="s1">&#39;F1-Score&#39;</span><span class="p">:</span> <span class="n">f1</span>
+    <span class="p">})</span>
+
+    <span class="c1"># Tampilkan Confusion Matrix</span>
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Confusion Matrix - </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Actual&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="c1"># Tampilkan Classification Report</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> ===&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+
+<span class="c1"># --- 4. Tampilkan Perbandingan Tabel ---</span>
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Perbandingan Model ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results_df</span><span class="p">)</span>
+
+<span class="c1"># --- 5. Visualisasi Perbandingan Model ---</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">results_df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s1">&#39;Model&#39;</span><span class="p">),</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Model&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Perbandingan Kinerja Model&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Skor&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Metrik&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/3b4476b68d33d23db57423b7c27d62361943bb97c84f2c13416b2e84845c04e1.png" src="_images/3b4476b68d33d23db57423b7c27d62361943bb97c84f2c13416b2e84845c04e1.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== SVM ===
+              precision    recall  f1-score   support
+
+           0       0.78      0.93      0.84        41
+           1       0.73      0.42      0.53        19
+
+    accuracy                           0.77        60
+   macro avg       0.75      0.67      0.69        60
+weighted avg       0.76      0.77      0.75        60
+</pre></div>
+</div>
+<img alt="_images/d2465c91fc543faaafad8153fa7387e4da0df88f12bdae1e6b7c9c76c1cbc586.png" src="_images/d2465c91fc543faaafad8153fa7387e4da0df88f12bdae1e6b7c9c76c1cbc586.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Random Forest ===
+              precision    recall  f1-score   support
+
+           0       0.84      0.93      0.88        41
+           1       0.80      0.63      0.71        19
+
+    accuracy                           0.83        60
+   macro avg       0.82      0.78      0.79        60
+weighted avg       0.83      0.83      0.83        60
+</pre></div>
+</div>
+<img alt="_images/956cdabde26ca50a4f2d63161e6b4bd6bebadb0c9f5b3a6e957c2d3f1f9900d7.png" src="_images/956cdabde26ca50a4f2d63161e6b4bd6bebadb0c9f5b3a6e957c2d3f1f9900d7.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Naive Bayes ===
+              precision    recall  f1-score   support
+
+           0       0.73      0.88      0.80        41
+           1       0.55      0.32      0.40        19
+
+    accuracy                           0.70        60
+   macro avg       0.64      0.60      0.60        60
+weighted avg       0.67      0.70      0.67        60
+
+
+=== Perbandingan Model ===
+           Model  Accuracy  Precision    Recall  F1-Score
+0            SVM  0.766667   0.727273  0.421053  0.533333
+1  Random Forest  0.833333   0.800000  0.631579  0.705882
+2    Naive Bayes  0.700000   0.545455  0.315789  0.400000
+</pre></div>
+</div>
+<img alt="_images/0e75397278bd10e6455ed68b2616da2caf843062827efcf0cbe42adda5cbd0b2.png" src="_images/0e75397278bd10e6455ed68b2616da2caf843062827efcf0cbe42adda5cbd0b2.png" />
+</div>
+</div>
+<p>Kode tersebut bertujuan untuk membandingkan tiga model klasifikasi—SVM, Random Forest, dan Naive Bayes—dalam memprediksi kematian pasien berdasarkan data klinis. Setiap model dilatih dengan data training, lalu diuji pada data testing. Evaluasi dilakukan menggunakan metrik akurasi, presisi, recall, dan F1-score. Hasil evaluasi ditampilkan dalam bentuk tabel dan visualisasi grafik batang, serta dilengkapi confusion matrix dan classification report untuk masing-masing model. Tujuannya adalah mengetahui model mana yang paling efektif dalam klasifikasi kasus gagal jantung.</p>
+</section>
+<section id="evaluasi">
+<h2><strong>4. Evaluasi</strong><a class="headerlink" href="#evaluasi" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- Import Library Evaluasi ---</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># --- Inisialisasi Model ---</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+
+<span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;SVM&quot;</span><span class="p">:</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s2">&quot;Random Forest&quot;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s2">&quot;Naive Bayes&quot;</span><span class="p">:</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># --- Training, Prediksi, Evaluasi ---</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">prec</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">rec</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+
+    <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+        <span class="s2">&quot;Model&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+        <span class="s2">&quot;Accuracy&quot;</span><span class="p">:</span> <span class="n">acc</span><span class="p">,</span>
+        <span class="s2">&quot;Precision&quot;</span><span class="p">:</span> <span class="n">prec</span><span class="p">,</span>
+        <span class="s2">&quot;Recall&quot;</span><span class="p">:</span> <span class="n">rec</span><span class="p">,</span>
+        <span class="s2">&quot;F1-Score&quot;</span><span class="p">:</span> <span class="n">f1</span>
+    <span class="p">})</span>
+
+    <span class="c1"># Confusion Matrix</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Confusion Matrix - </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Actual&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Classification Report: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> ===&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+
+<span class="c1"># --- Tabel Perbandingan ---</span>
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;F1-Score&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Tabel Perbandingan Model ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results_df</span><span class="p">)</span>
+
+<span class="c1"># --- Visualisasi ---</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">results_df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s1">&#39;Model&#39;</span><span class="p">),</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Model&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;variable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Perbandingan Kinerja Model&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Skor&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Metrik&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># --- Kesimpulan Otomatis ---</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">results_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Kesimpulan ===&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Model terbaik berdasarkan F1-Score adalah **</span><span class="si">{</span><span class="n">best_model</span><span class="p">[</span><span class="s1">&#39;Model&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">** &quot;</span>
+      <span class="sa">f</span><span class="s2">&quot;dengan akurasi: </span><span class="si">{</span><span class="n">best_model</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, &quot;</span>
+      <span class="sa">f</span><span class="s2">&quot;precision: </span><span class="si">{</span><span class="n">best_model</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, &quot;</span>
+      <span class="sa">f</span><span class="s2">&quot;recall: </span><span class="si">{</span><span class="n">best_model</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, &quot;</span>
+      <span class="sa">f</span><span class="s2">&quot;dan F1-score: </span><span class="si">{</span><span class="n">best_model</span><span class="p">[</span><span class="s1">&#39;F1-Score&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model ini paling seimbang dalam hal mendeteksi pasien yang berisiko meninggal (positif class), &quot;</span>
+      <span class="s2">&quot;dengan minim false positive maupun false negative.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/3b4476b68d33d23db57423b7c27d62361943bb97c84f2c13416b2e84845c04e1.png" src="_images/3b4476b68d33d23db57423b7c27d62361943bb97c84f2c13416b2e84845c04e1.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Classification Report: SVM ===
+              precision    recall  f1-score   support
+
+           0       0.78      0.93      0.84        41
+           1       0.73      0.42      0.53        19
+
+    accuracy                           0.77        60
+   macro avg       0.75      0.67      0.69        60
+weighted avg       0.76      0.77      0.75        60
+</pre></div>
+</div>
+<img alt="_images/d2465c91fc543faaafad8153fa7387e4da0df88f12bdae1e6b7c9c76c1cbc586.png" src="_images/d2465c91fc543faaafad8153fa7387e4da0df88f12bdae1e6b7c9c76c1cbc586.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Classification Report: Random Forest ===
+              precision    recall  f1-score   support
+
+           0       0.84      0.93      0.88        41
+           1       0.80      0.63      0.71        19
+
+    accuracy                           0.83        60
+   macro avg       0.82      0.78      0.79        60
+weighted avg       0.83      0.83      0.83        60
+</pre></div>
+</div>
+<img alt="_images/956cdabde26ca50a4f2d63161e6b4bd6bebadb0c9f5b3a6e957c2d3f1f9900d7.png" src="_images/956cdabde26ca50a4f2d63161e6b4bd6bebadb0c9f5b3a6e957c2d3f1f9900d7.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Classification Report: Naive Bayes ===
+              precision    recall  f1-score   support
+
+           0       0.73      0.88      0.80        41
+           1       0.55      0.32      0.40        19
+
+    accuracy                           0.70        60
+   macro avg       0.64      0.60      0.60        60
+weighted avg       0.67      0.70      0.67        60
+
+
+=== Tabel Perbandingan Model ===
+           Model  Accuracy  Precision    Recall  F1-Score
+1  Random Forest  0.833333   0.800000  0.631579  0.705882
+0            SVM  0.766667   0.727273  0.421053  0.533333
+2    Naive Bayes  0.700000   0.545455  0.315789  0.400000
+</pre></div>
+</div>
+<img alt="_images/17d4d3a8ce3c59a25708931cc16eeaa2eab867b8e89747ad25c62e6f5c12c4ed.png" src="_images/17d4d3a8ce3c59a25708931cc16eeaa2eab867b8e89747ad25c62e6f5c12c4ed.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Kesimpulan ===
+Model terbaik berdasarkan F1-Score adalah **Random Forest** dengan akurasi: 0.83, precision: 0.80, recall: 0.63, dan F1-score: 0.71.
+
+Model ini paling seimbang dalam hal mendeteksi pasien yang berisiko meninggal (positif class), dengan minim false positive maupun false negative.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Tujuan dari kode ini adalah untuk mengevaluasi dan membandingkan performa tiga model klasifikasi—SVM, Random Forest, dan Naive Bayes—dalam memprediksi kematian pasien. Evaluasi dilakukan dengan metrik akurasi, presisi, recall, dan F1-score. Hasilnya ditampilkan dalam bentuk tabel, visualisasi grafik, dan confusion matrix untuk mengetahui model yang paling akurat dan seimbang dalam mendeteksi pasien berisiko.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="TugasPraUAS.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tugas Pra UAS</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset"><strong>Dataset</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding"><strong>1.	Data understanding</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-jelaskan-setiap-fitur-atau-variable-data-tersebut">a.	Jelaskan setiap fitur atau variable data tersebut</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-eksplorasi-data-kualitas-data">b. Eksplorasi Data: Kualitas Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-visualisasikan-data-tersebut">c.	Visualisasikan data tersebut</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepocessing-data-tersebut"><strong>2.	Prepocessing data tersebut</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling"><strong>3. Modelling</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluasi"><strong>4. Evaluasi</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Amelia Safitri
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
